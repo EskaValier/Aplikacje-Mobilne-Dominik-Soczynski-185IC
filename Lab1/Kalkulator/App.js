@@ -1,24 +1,128 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View, Button, Alert } from 'react-native';
+import React, { Component } from 'react';
+import { Text, View, StyleSheet, Button, TextInput,Alert } from 'react-native';
+import Constants from 'expo-constants';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text id="liczba">Open up App.js to start working on your app!</Text>
-      <Button title="1" onPress={() => Alert.alert('1')}/>
-      <Button title="2" onPress={() => Alert.alert('2')}/>
-      <Button title="3" onPress={() => Alert.alert('3')}/>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+export default class App extends Component {
+    state = {
+        text: 0,
+        input: '',
+        inputValue: 0,
+        inputValue2: 0,
+        result: 0
+    }
+    onButtonPressed = function() { this.setState({ text:this.state.inputValue })}
+    _handleTextChange = inputValue => { this.setState({ inputValue }); 
+    };
+    _handleTextChange2 = inputValue2 => { this.setState({ inputValue2 }); 
+    };
+
+    add = function() {
+        let x = parseFloat(this.state.inputValue);
+        let y = parseFloat(this.state.inputValue2);
+        let result = x + y;
+        this.setState({ text: result})
+    }
+
+    subtract = function() {
+        let x = parseFloat(this.state.inputValue);
+        let y = parseFloat(this.state.inputValue2);
+        let result = x - y;
+        this.setState({ text: result})
+    }
+
+    divide = function(){
+        let x = parseFloat(this.state.inputValue);
+        let y = parseFloat(this.state.inputValue2);
+        let result = x / y;
+        this.setState({ text: result})
+    }
+
+    multiplicate = function(){
+        let x = parseFloat(this.state.inputValue);
+        let y = parseFloat(this.state.inputValue2);
+        let result = x * y;
+        this.setState({ text: result})
+    }
+
+    render() {
+        return (
+        <View style={styles.container}>
+            <Text style={{fontWeight: 'bold'}}> 
+            Pierwsza liczba
+            </Text>
+
+            <TextInput
+            value={this.state.inputValue}
+            keyboardType = 'numeric'
+            onChangeText={this._handleTextChange}
+            style={styles.textInputStyle}
+            />
+
+            <Text style={{fontWeight: 'bold'}}> 
+            Druga liczba
+            </Text>
+
+            <TextInput
+            value={this.state.inputValue2}
+            keyboardType = 'numeric'
+            onChangeText={this._handleTextChange2}
+            style={styles.textInputStyle}
+            />
+
+            <Text style={styles.paragraph}>
+            {this.state.text}
+            </Text>
+        
+            <View style={styles.buttonContainer}>
+                <View style={styles.buttonStyle}>
+                <Button title='+' onPress={this.add.bind(this)} style={styles.buttonStyle}/>
+                </View>
+                <View style={styles.buttonStyle}>
+                <Button title='-' onPress={this.subtract.bind(this)} style={styles.buttonStyle}/>
+                </View>
+                <View style={styles.buttonStyle}>
+                <Button title='/' onPress={this.divide.bind(this)} style={styles.buttonStyle}/>
+                </View>
+                <View style={styles.buttonStyle}>
+                <Button title='*' onPress={this.multiplicate.bind(this)} style={styles.buttonStyle}/>
+                </View>
+            </View>
+        </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingTop: Constants.statusBarHeight,
+        backgroundColor: '#ecf0f1',
+    },
+    paragraph: {
+        fontSize: 18,
+        width: 200,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#34495e',
+        borderWidth: 4, backgroundColor: 'yellow'
+    },
+    buttonContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        margin: 0,
+    },
+    buttonStyle: {
+        margin: 19,
+    },
+    textInputStyle: {
+        height: 40, 
+        borderColor: 'gray', 
+        borderWidth: 2,
+        textAlign: 'center',
+        marginBottom:20,
+    }
+
 });

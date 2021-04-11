@@ -12,8 +12,6 @@ Poniższe zagadnienia powinny zostać zrealizowane:
 - w każdym z zadań można użyć Expo lub React Native CLI lub create-react-native-app,
 - należy opisać w pliku README.md co zostało zrealizowane, za co odpowiada wybrany fragment kodu (komponent, funkcja lub klasa) oraz dołączyć zrzuty aplikacji (lub zdjęcia ekranu telefonu, jeśli nie uda się zrobić standardowego zrzutu).
 
-
-
 Widok strony po uruchomieniu
 ![StronaGlowna](Screenshots/StartStrony.jpg "Strona Glowna")
 

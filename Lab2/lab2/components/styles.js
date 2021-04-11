@@ -5,23 +5,25 @@ const styles = {}
 styles.home = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#444',
-        alignItems: 'stretch',
+        backgroundColor: '#888',
         justifyContent: 'center',
-        marginVertical:128,
+        marginTop: 25,
     },
     button:{
-        flex: 1,
-        backgroundColor: '#fa0',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginHorizontal: 64,
-        marginVertical: 32,
-        borderRadius:10,
+        marginHorizontal: 15,
     },
-    text: {
-        color:'#444',
-        fontSize:24,
+    mainText: {
+        color:'#00f',
+        fontSize: 25,
+        fontWeight: 'bold',
+        textAlign: 'center',
+    },
+    additionalText: {
+        color:'#000',
+        fontSize: 15,
+        textAlign: 'left',
+        marginHorizontal: 15,
+        marginVertical: 15,
     },
 });
 
@@ -55,9 +57,9 @@ styles.content = StyleSheet.create({
 styles.nav = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        backgroundColor: '#444',
-        paddingHorizontal:15,
-        paddingVertical:32,
+        backgroundColor: '#400',
+        paddingHorizontal:5,
+        paddingVertical:3,
     },
     text: {
         color:'#000',

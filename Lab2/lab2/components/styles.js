@@ -55,6 +55,7 @@ styles.content = StyleSheet.create({
         fontSize:15,
         padding: 10,
         marginHorizontal: 15,
+        marginBottom:30,
     },
     button: {
 

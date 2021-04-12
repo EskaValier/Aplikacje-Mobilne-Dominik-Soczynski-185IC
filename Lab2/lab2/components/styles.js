@@ -25,6 +25,9 @@ styles.home = StyleSheet.create({
         marginHorizontal: 15,
         marginVertical: 15,
     },
+    alignCenter: {
+        textAlign: 'center',
+    }
 });
 
 

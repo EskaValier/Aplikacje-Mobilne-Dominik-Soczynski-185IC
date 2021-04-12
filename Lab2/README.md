@@ -8,3 +8,21 @@ poniższe zagadnienia powinny zostać zrealizowane:
 - style należy utworzyć w pliku styles.js i zaimportować w odpowiednim miejscu,
 - należy umieścić na ww. ekranach informacje, czym jest spread operator, czym są rest parameters oraz do czego służy 'hook' useState,
 
+Widok nawigacji wykonanej przy pomocy drawer-navigation
+![Navigation](Screenshots/Navigation.png "Navigation")
+
+Widok strony "Home"
+![Home](Screenshots/Home.png "Home")
+
+Widok strony "Spread Operator"
+![spread operator](Screenshots/SpreadOperator.png "spread operator")
+
+Widok strony "Rest Parameters"
+![Rest Parameters](Screenshots/RestParameters.png "Rest Parameters")
+
+Widok strony "Rest Parameters" (dół strony)
+![Rest Parameters](Screenshots/RestParameters2.png "Rest Parameters")
+
+Widok strony "UseState"
+![useState](Screenshots/UseState.png "useState")
+

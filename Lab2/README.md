@@ -8,6 +8,8 @@ poniższe zagadnienia powinny zostać zrealizowane:
 - style należy utworzyć w pliku styles.js i zaimportować w odpowiednim miejscu,
 - należy umieścić na ww. ekranach informacje, czym jest spread operator, czym są rest parameters oraz do czego służy 'hook' useState,
 
+Do przechodzenia między ekranami wykorzystany został drawer-navigation, który rozwija się z lewej strony i można w nim wybrać ekran na który chcemy się przełączyć.
+
 Widok nawigacji wykonanej przy pomocy drawer-navigation
 ![Navigation](Screenshots/Navigation.png "Navigation")
 

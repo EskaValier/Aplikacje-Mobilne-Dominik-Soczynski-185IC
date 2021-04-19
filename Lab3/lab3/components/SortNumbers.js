@@ -8,7 +8,7 @@ const NumbersList = ({ liczby: Numbers }) => {
     console.log(Numbers)
         return (
             <ScrollView >
-            {Numbers.map(Number => <Text key={index++} >{Number}</Text>)}
+                {Numbers.map(Number => <Text key={index++} >{Number}</Text>)}
             </ScrollView>
         );
 };
@@ -18,22 +18,19 @@ export default class SortNumbers extends Component{
         super();
         const arr = []; 
         for (let i = 0; i < 100; i++) {
-        arr.push(Math.floor(Math.random() * 1000) + 1);
+            arr.push(Math.floor(Math.random() * 1000) + 1);
         }
         this.state = { arr };
     }
-    sort = () =>{
-        this.state.arr.sort((a,b) => a > b ? 1:-1);
-        this.forceUpdate();
-    }
-    randomize = () =>{
+    randomizeAndSort = () =>{
         console.log(this.state.arr)
         const newarr = [];
         for (let i = 0; i < this.state.arr.length; i++) {
         newarr.push(Math.floor(Math.random() * 1000) + 1);
         }
         this.state.arr = newarr;
-        this.sort();
+        this.state.arr.sort((a,b) => a > b ? 1:-1);
+        this.forceUpdate();
     }
     
     render(){ 
@@ -46,7 +43,7 @@ export default class SortNumbers extends Component{
                         <Text style={styles.content.code}>Wyświetlanie posortowanych liczb z przedziału od 1 do 1000.</Text>
                     </View>
                     <View style={styles.content.buttons}>
-                        <Button  onPress={this.randomize} title="Losuj i sortuj" />
+                        <Button  onPress={this.randomizeAndSort} title="Losuj i sortuj" />
                     </View>
                 </View>
 

@@ -4,6 +4,7 @@ do działania należy uruchomić:
 - npm install @react-navigation/native
 - npm install @react-navigation/drawer
 - expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+- npm install react-native-progress --save
 
 Zadanie wykorzystuje:
 - funkcjami strzałkowymi - głównie przykłady z map(),
@@ -38,3 +39,9 @@ Widok StepProgress2, w którym przedstawiona jest ikona ładowania
 
 Widok StepProgress3, w którym przedstawiona jest ikona ładowania
 ![StepProgress3](Screenshots/StepProgress3.png "StepProgress3")
+
+Widok nawigacji/menu wykonanego przy pomocy drawer-navigation. Dodany element ProgressBar
+![MenuNew](Screenshots/MenuNew.png "MenuNew")
+
+Widok ProgressBar, w którym przedstawiona jest ikona ładowania. Postęp jest wzbudzany kliknięciem w przycisk ze skokiem 10%
+![ProgressBar](Screenshots/ProgressBar.png "ProgressBar")

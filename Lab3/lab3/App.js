@@ -8,6 +8,9 @@ import RestParameters  from './components/RestParameters';
 import UseState  from './components/UseState';
 import SortNumbers from './components/SortNumbers';
 import LazyLoading from './components/LazyLoading';
+import StepProgress1 from './components/StepProgress1';
+import StepProgress2 from './components/StepProgress2';
+import StepProgress3 from './components/StepProgress3';
 
 const Drawer = createDrawerNavigator();
 
@@ -21,6 +24,9 @@ export default function App() {
             <Drawer.Screen name="UseState" component={UseState} />
             <Drawer.Screen name="SortNumbers" component={SortNumbers} />
             <Drawer.Screen name="LazyLoading" component={LazyLoading} />
+            <Drawer.Screen name="StepProgress1" component={StepProgress1} />
+            <Drawer.Screen name="StepProgress2" component={StepProgress2} />
+            <Drawer.Screen name="StepProgress3" component={StepProgress3} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

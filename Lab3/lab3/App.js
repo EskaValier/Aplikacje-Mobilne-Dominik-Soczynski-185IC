@@ -11,6 +11,7 @@ import LazyLoading from './components/LazyLoading';
 import StepProgress1 from './components/StepProgress1';
 import StepProgress2 from './components/StepProgress2';
 import StepProgress3 from './components/StepProgress3';
+import ProgressElements from './components/Progress';
 
 const Drawer = createDrawerNavigator();
 
@@ -27,6 +28,7 @@ export default function App() {
             <Drawer.Screen name="StepProgress1" component={StepProgress1} />
             <Drawer.Screen name="StepProgress2" component={StepProgress2} />
             <Drawer.Screen name="StepProgress3" component={StepProgress3} />
+            <Drawer.Screen name="ProgressElements" component={ProgressElements} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

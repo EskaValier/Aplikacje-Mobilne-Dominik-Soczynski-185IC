@@ -9,6 +9,7 @@ import UseState  from './components/UseState';
 import TextInputs from './components/TextInputs';
 import Select from './components/Select';
 import Switch from './components/Switch';
+import DateTimePickerEx from './components/DateTimePicker';
 
 const Drawer = createDrawerNavigator();
 
@@ -23,6 +24,7 @@ export default function App() {
             <Drawer.Screen name="Text Input" component={TextInputs} />
             <Drawer.Screen name="Select" component={Select} />
             <Drawer.Screen name="Switch" component={Switch} />
+            <Drawer.Screen name="DateTimePicker" component={DateTimePickerEx} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

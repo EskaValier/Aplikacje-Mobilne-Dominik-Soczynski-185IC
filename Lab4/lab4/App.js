@@ -10,6 +10,7 @@ import TextInputs from './components/TextInputs';
 import Select from './components/Select';
 import Switch from './components/Switch';
 import DateTimePickerEx from './components/DateTimePicker';
+import ToastScreen from './components/ToastAndroid';
 
 const Drawer = createDrawerNavigator();
 
@@ -25,6 +26,7 @@ export default function App() {
             <Drawer.Screen name="Select" component={Select} />
             <Drawer.Screen name="Switch" component={Switch} />
             <Drawer.Screen name="DateTimePicker" component={DateTimePickerEx} />
+            <Drawer.Screen name="Toast Android" component={ToastScreen} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

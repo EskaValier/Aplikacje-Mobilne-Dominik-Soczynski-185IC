@@ -20,6 +20,7 @@ export default class SwitchScreen extends Component {
         return (
             <ScrollView style={styles.content.container}>
                 <Text style={styles.content.title}>Switch</Text>
+                <Text style={styles.content.text}>Losuj i pokaż losową liczbę z zakresu 1-1000</Text>
                 <View style={styles.content.text}>                    
                     <CustomSwitch/>
                 </View>

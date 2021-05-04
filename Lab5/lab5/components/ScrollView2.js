@@ -7,7 +7,7 @@ export default class ScrollViewTwo extends Component {
         return (
             <View style={styles.content.container}>
                 <Text style={styles.content.title}>Drugi ScrollView</Text>
-                <Text style={styles.content.text}>Standardowy ScorllView z ustawioną wysokością na 3/4 ekranu urządzenia na którym jest uruchamiana strona</Text>
+                <Text style={styles.content.text}>ScorllView z ustawionym 'stickyHeaderIndices' na pierwszy element znajdujący się w 'ScrollView' oraz wyświetlanym komunikatem przy zakończeniu scroolowania</Text>
                 <ScrollView stickyHeaderIndices={[0]}
                     onScrollEndDrag ={() => alert("Parametrem 'onScrollEndDrag' elementu 'ScrollView' można ustawić co ma się zdarzyć po zakończeniu scroolowania")}
                     style={styles.content.textCode}

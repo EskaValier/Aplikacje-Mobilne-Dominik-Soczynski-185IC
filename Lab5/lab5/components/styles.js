@@ -60,6 +60,13 @@ styles.content = StyleSheet.create({
         marginHorizontal: 15,
         marginBottom:30,
     },
+    input: {
+        backgroundColor: '#888',
+        color:'#fff',
+        fontSize:15,
+        padding: 10,
+        marginBottom:5,
+    },
     header: {
         backgroundColor: '#777',
         color:'#0af',

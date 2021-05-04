@@ -8,6 +8,7 @@ import  RestParameters  from './components/RestParameters';
 import  UseState  from './components/UseState';
 import  ScrollViewOne from './components/ScrollView';
 import  ScrollViewTwo from './components/ScrollView2';
+import  Touchable from './components/Tuchable';
 
 const Drawer = createDrawerNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
             <Drawer.Screen name="UseState" component={UseState} />
             <Drawer.Screen name="ScrollView" component={ScrollViewOne} />
             <Drawer.Screen name="ScrollView2" component={ScrollViewTwo} />
+            <Drawer.Screen name="Touchable" component={Touchable} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

@@ -9,6 +9,7 @@ import  UseState  from './components/UseState';
 import  ScrollViewOne from './components/ScrollView';
 import  ScrollViewTwo from './components/ScrollView2';
 import  Touchable from './components/Tuchable';
+import  SwipeableScreen from './components/Swipeable';
 
 const Drawer = createDrawerNavigator();
 
@@ -23,6 +24,7 @@ export default function App() {
             <Drawer.Screen name="ScrollView" component={ScrollViewOne} />
             <Drawer.Screen name="ScrollView2" component={ScrollViewTwo} />
             <Drawer.Screen name="Touchable" component={Touchable} />
+            <Drawer.Screen name="Swipeable" component={SwipeableScreen} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

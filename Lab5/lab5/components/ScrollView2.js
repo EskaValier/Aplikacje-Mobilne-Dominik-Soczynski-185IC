@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { ScrollView, Text, View, ScrollViewStickyHeader } from 'react-native';
+import { ScrollView, Text, View} from 'react-native';
 import styles from './styles'
 
 export default class ScrollViewTwo extends Component {
@@ -9,7 +9,9 @@ export default class ScrollViewTwo extends Component {
                 <Text style={styles.content.title}>Drugi ScrollView</Text>
                 <Text style={styles.content.text}>Standardowy ScorllView z ustawioną wysokością na 3/4 ekranu urządzenia na którym jest uruchamiana strona</Text>
                 <ScrollView stickyHeaderIndices={[0]}
-                    style={styles.content.textCode}>
+                    onScrollEndDrag ={() => alert("Parametrem 'onScrollEndDrag' elementu 'ScrollView' można ustawić co ma się zdarzyć po zakończeniu scroolowania")}
+                    style={styles.content.textCode}
+                >
                     <View>
                         <Text style={styles.content.header}>Lorem ipsum</Text>
                     </View>

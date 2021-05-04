@@ -7,7 +7,7 @@ Prosty kalkulator, w aplikacji podajemy dwie liczby oraz działanie jakie chcemy
 ### Lab. nr 2 - responsywne layouty + nawigacja
 
 #### Zadanie wykorzystuje:
-- koncepcje Flexboxa
+- koncepcje Flexboexpoxa
 - dokumentacją React Native na temat Flexboxa,
 - Platform API dla React Native,
 - międzyplatformowymi komponentami dla React Native.
@@ -35,3 +35,13 @@ Prosty kalkulator, w aplikacji podajemy dwie liczby oraz działanie jakie chcemy
 - obsługą komponentu Alert w React Native,
 - dokumentacją ToastAndroid API w RN.
 
+### Lab. nr 5 - obsługa gestów użytkownika
+
+#### Zadanie wykorzystuje:
+- Gesture Responder System w React Native,
+- obsługą komponentu ScrollView w React Native,
+- metodą fill(),
+- obsługą komponentu TouchableOpacity w React Native,
+- obsługą komponentu Pressable w React Native,
+- obsługą komponentu TouchableHighlight w React Native,
+- obsługą komponentu Swipeable w React Native,

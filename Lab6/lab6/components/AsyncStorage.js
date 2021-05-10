@@ -31,7 +31,7 @@ export default class AsyncStorageCmp extends Component {
         return (
             <View style={styles.content.container}>
                 <Text style={styles.content.title}>Komponent 'AsyncStorage'</Text>
-                <View style={styles.content.container} >
+                <View style={styles.content.container, styles.content.center} >
                     <Text style={styles.content.text}>Dane zapisywane są w postaci Klucz-Wartość</Text>
                     <View >
                         <TextInput style={styles.content.textCode} onEndEditing={event =>{this.setState({saveKey: event.nativeEvent.text})}} placeholder="Podaj klucz" />

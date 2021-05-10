@@ -38,10 +38,10 @@ export default class Offline extends Component {
     componentDidMount(){ //sprawdzanie stanu połączenia z internetem co 1/2 sekundy (szybkość odświerzania danych)
         setInterval(this.checkData, 500)
     }
-    
+
     render(){ 
         return (
-            <View style={styles.content.container}>
+            <View style={[styles.content.container,styles.content.center] }>
                 <Text style={styles.content.title}>Synchronizacja danych w przypadku połączenia z internetem i jego braku</Text>
                 <Text style={styles.content.text}>{this.state.internetConnection?`Połączenie z internetem `:`Brak połączenia z internetem`}</Text>
                 <Switch value={this.state.internetConnection} onValueChange={val =>{this.setState({ internetConnection: val})}}/> 

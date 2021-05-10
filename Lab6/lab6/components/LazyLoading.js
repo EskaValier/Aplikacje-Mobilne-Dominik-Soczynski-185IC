@@ -9,7 +9,7 @@ export default class LazyLoading extends Component {
         return (
             <View style={styles.content.container}>
                 <Text style={styles.content.title}>LazyLoading obrazka</Text>
-                <View style={styles.content.example}>
+                <View style={styles.content.center}>
                     <Image style={{width: 200, height: 200}} source={{uri: 'https://cdn.getyourguide.com/img/country/58de136b73284.jpeg/88.jpg',}} progressiveRenderingEnabled={false}/>
                 </View>
                 

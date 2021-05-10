@@ -10,6 +10,7 @@ import  Images from './components/Images';
 import Slider from './components/Slider';
 import LazyLoading from './components/LazyLoading';
 import ConectionDetector from './components/ConectionDetector';
+import AsyncStorageCmp from './components/AsyncStorage';
 
 const Drawer = createDrawerNavigator();
 
@@ -25,6 +26,7 @@ export default function App() {
             <Drawer.Screen name="Slider" component={Slider} />
             <Drawer.Screen name="LazyLoading" component={LazyLoading} />
             <Drawer.Screen name="ConectionDetector" component={ConectionDetector} />
+            <Drawer.Screen name="AsyncStorage" component={AsyncStorageCmp} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

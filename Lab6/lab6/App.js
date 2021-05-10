@@ -9,6 +9,7 @@ import  UseState  from './components/UseState';
 import  Images from './components/Images';
 import Slider from './components/Slider';
 import LazyLoading from './components/LazyLoading';
+import ConectionDetector from './components/ConectionDetector';
 
 const Drawer = createDrawerNavigator();
 
@@ -23,6 +24,7 @@ export default function App() {
             <Drawer.Screen name="Images" component={Images} />
             <Drawer.Screen name="Slider" component={Slider} />
             <Drawer.Screen name="LazyLoading" component={LazyLoading} />
+            <Drawer.Screen name="ConectionDetector" component={ConectionDetector} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

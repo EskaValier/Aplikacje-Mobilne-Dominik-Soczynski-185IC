@@ -45,3 +45,14 @@ Prosty kalkulator, w aplikacji podajemy dwie liczby oraz działanie jakie chcemy
 - obsługą komponentu Pressable w React Native,
 - obsługą komponentu TouchableHighlight w React Native,
 - obsługą komponentu Swipeable w React Native,
+
+### Lab. nr 6 - obsługa obrazów + tryb offline
+
+#### Zadanie wykorzystuje:
+- obsługą komponentu Image w React Native,
+- obsługą komponentu NetInfo w React Native,
+- obsługą komponentu Slider w React Native,
+- zastosowaniem ikon w React Native,
+- zastosowaniem ikon w Expo,
+- obsługą komponentu/modułu AsyncStorage w React Native.
+

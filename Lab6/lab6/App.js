@@ -7,6 +7,7 @@ import  SpreadOperator  from './components/SpreadOperator';
 import  RestParameters  from './components/RestParameters';
 import  UseState  from './components/UseState';
 import  Images from './components/Images';
+import Slider from './components/Slider'
 
 const Drawer = createDrawerNavigator();
 
@@ -19,6 +20,7 @@ export default function App() {
             <Drawer.Screen name="RestParameters" component={RestParameters} />
             <Drawer.Screen name="UseState" component={UseState} />
             <Drawer.Screen name="Images" component={Images} />
+            <Drawer.Screen name="Slider" component={Slider} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

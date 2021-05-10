@@ -59,6 +59,8 @@ styles.content = StyleSheet.create({
         padding: 10,
         marginHorizontal: 15,
         marginBottom:30,
+        justifyContent: 'center',
+    alignItems: 'center',
     },
     input: {
         backgroundColor: '#888',

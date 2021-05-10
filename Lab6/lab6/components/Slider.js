@@ -14,7 +14,7 @@ export default class SlideComponent extends Component {
         return (
             <View style={styles.content.container}>
                 <Text style={styles.content.title}>Komponent Slider</Text>
-                <View style={styles.content.textCode}>
+                <View style={styles.content.textCode,styles.content.center}>
                     <Text style={styles.content.text}>Zmiana rozmiaru obrazka za pomocą suwaka</Text>
                     <Slider
                         style={{width: 300, height: 40}}

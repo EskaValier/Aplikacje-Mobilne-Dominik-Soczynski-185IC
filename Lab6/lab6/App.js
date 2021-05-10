@@ -11,6 +11,7 @@ import Slider from './components/Slider';
 import LazyLoading from './components/LazyLoading';
 import ConectionDetector from './components/ConectionDetector';
 import AsyncStorageCmp from './components/AsyncStorage';
+import Offline from './components/Offline';
 
 const Drawer = createDrawerNavigator();
 
@@ -27,6 +28,7 @@ export default function App() {
             <Drawer.Screen name="LazyLoading" component={LazyLoading} />
             <Drawer.Screen name="ConectionDetector" component={ConectionDetector} />
             <Drawer.Screen name="AsyncStorage" component={AsyncStorageCmp} />
+            <Drawer.Screen name="Offline" component={Offline} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

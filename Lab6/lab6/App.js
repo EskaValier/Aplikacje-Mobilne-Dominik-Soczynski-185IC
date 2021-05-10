@@ -7,7 +7,8 @@ import  SpreadOperator  from './components/SpreadOperator';
 import  RestParameters  from './components/RestParameters';
 import  UseState  from './components/UseState';
 import  Images from './components/Images';
-import Slider from './components/Slider'
+import Slider from './components/Slider';
+import LazyLoading from './components/LazyLoading';
 
 const Drawer = createDrawerNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
             <Drawer.Screen name="UseState" component={UseState} />
             <Drawer.Screen name="Images" component={Images} />
             <Drawer.Screen name="Slider" component={Slider} />
+            <Drawer.Screen name="LazyLoading" component={LazyLoading} />
         </Drawer.Navigator>
         </NavigationContainer>
     );

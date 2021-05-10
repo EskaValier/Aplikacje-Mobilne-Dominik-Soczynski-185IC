@@ -38,6 +38,8 @@ styles.content = StyleSheet.create({
         backgroundColor: '#555',
         paddingHorizontal:30,
         paddingVertical:30,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     title: {
         color:'#0af',
@@ -59,8 +61,6 @@ styles.content = StyleSheet.create({
         padding: 10,
         marginHorizontal: 15,
         marginBottom:30,
-        justifyContent: 'center',
-    alignItems: 'center',
     },
     input: {
         backgroundColor: '#888',
@@ -75,6 +75,10 @@ styles.content = StyleSheet.create({
         fontSize: 25,
         fontWeight: 'bold',
         textAlign: 'center',
+    },
+    center: {
+        justifyContent: 'center',
+        alignItems: 'center',
     }
 });  
 

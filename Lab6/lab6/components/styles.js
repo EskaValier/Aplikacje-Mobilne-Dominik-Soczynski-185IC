@@ -38,8 +38,6 @@ styles.content = StyleSheet.create({
         backgroundColor: '#555',
         paddingHorizontal:30,
         paddingVertical:30,
-        justifyContent: 'center',
-        alignItems: 'center',
     },
     title: {
         color:'#0af',

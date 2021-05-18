@@ -29,14 +29,7 @@
 // }
 
 import React from "react";
-import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
-  TouchableOpacity
-} from "react-native";
+import { ScrollView, StyleSheet, Text, View, TextInput, TouchableOpacity } from "react-native";
 import Constants from "expo-constants";
 import * as SQLite from 'expo-sqlite';
 

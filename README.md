@@ -56,3 +56,12 @@ Prosty kalkulator, w aplikacji podajemy dwie liczby oraz działanie jakie chcemy
 - zastosowaniem ikon w Expo,
 - obsługą komponentu/modułu AsyncStorage w React Native.
 
+### Lab. nr 7 - wykorzystanie bazy danych w aplikacji mobilnej
+
+#### Zadanie wykorzystuje:
+- dostęp do bazy SQLite z wykorzystaniem Expo,
+- przykłady użycia zapytań do bazy SQLite w aplikacji React Native,
+- użycie modułu react-native-sqlite-storage dla istniejącej bazy SQLite,
+- aplikacja do obsługi bazy SQLite,
+- użycie bazy Realm w aplikacji z React Native,
+- dokumentacja modułu react-native-sqlite-storage.

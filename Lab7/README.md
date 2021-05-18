@@ -45,10 +45,10 @@
 ![ToDo7](Screenshots/ToDo7.png "ToDo7")
 ![ToDo8](Screenshots/ToDo8.png "ToDo8")
 
-### Po zrestartowaniu zadania możemy dodać i update'ować zadanie "Nauka na egzamin"
+### Po zrestartowaniu zadania możemy zobaczyć wszystkie zadania które wcześniej dodaliśmy oraz dodać i update'ować kolejne zadanie "Nauka na egzamin". Dzięki połączeniu z BD nie straciliśmy poprzednio dodanych zadań
 ![ToDo9](Screenshots/ToDo9.png "ToDo9")
 
 ### Na koniec możemy zobaczyć w konsoli że mimo ponownego buildowania aplikacji działaliśmy cały czas na tej samej bazie danych
 #### Wyświetlany w konsoli wynik zapytania "select * from items" po każdym dodaniu elementu lub update'cie elementów
-![DaneDB](Screenshots/DaneDB.png "DaneDB")
+![DaneBD](Screenshots/DaneBD.png "DaneBD")
 

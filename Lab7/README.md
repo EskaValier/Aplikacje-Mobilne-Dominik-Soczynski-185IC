@@ -26,8 +26,29 @@
 - można ww. warianty zrealizować w jednej aplikacji na osobnych ekranach lub stworzyć dwie osobne aplikacje,
 - dane w bazie danych zależą od twórcy aplikacji,
 
-### Widok nawigacji wykonanej przy pomocy drawer-navigation (rozbudowa aplikacji z Lab2, dodane nowe podstrony)
-![Menu](Screenshots/Menu.png "Menu")
+### Widok strony splikacji ToDo
+![ToDo1](Screenshots/ToDo1.png "ToDo1")
 
-### Widok podstrony Images z ładowaniem 2 obrazków za pomocą właściwości 'uri'oraz z użyciem metody require()
-![Images](Screenshots/Images.png "Images")
+### Dodawanie zadań odbywa się poprzez wpisanie (w komponent TextInput) zadania i zatwierdzenie go przyciskiem "ENTER"
+#### Dodanie kilku zadań
+![ToDo2](Screenshots/ToDo2.png "ToDo2")
+![ToDo3](Screenshots/ToDo3.png "ToDo3")
+![ToDo4](Screenshots/ToDo4.png "ToDo4")
+
+### Update danych w bazie polega na kliknięciu w wybrane zadanie (status zadania zmienia się z "ToDo" na "Completed")
+![ToDo5](Screenshots/ToDo5.png "ToDo5")
+
+### Dodanie oraz Update kilki kolejnych zadań
+![ToDo6](Screenshots/ToDo6.png "ToDo6")
+
+### Usuwanie elementów (możliwe tylko na elementach z statusem "Completed") odbywa się przez naciśnięcie na dane zadanie które jest już ukończone
+![ToDo7](Screenshots/ToDo7.png "ToDo7")
+![ToDo8](Screenshots/ToDo8.png "ToDo8")
+
+### Po zrestartowaniu zadania możemy dodać i update'ować zadanie "Nauka na egzamin"
+![ToDo9](Screenshots/ToDo9.png "ToDo9")
+
+### Na koniec możemy zobaczyć w konsoli że mimo ponownego buildowania aplikacji działaliśmy cały czas na tej samej bazie danych
+#### Wyświetlany w konsoli wynik zapytania "select * from items" po każdym dodaniu elementu lub update'cie elementów
+![DaneDB](Screenshots/DaneDB.png "DaneDB")
+
